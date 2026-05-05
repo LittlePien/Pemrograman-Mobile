@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentOne">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.example.fragmentassign.fragments.Fragment_One"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_fragmentOne_to_fragmentTwo"
+            app:destination="@id/fragmentTwo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.example.fragmentassign.fragments.Fragment_Two"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+        <action
+            android:id="@+id/action_fragmentTwo_to_fragmentThree"
+            app:destination="@id/fragmentThree" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.example.fragmentassign.fragments.Fragment_Three"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
+        <action
+            android:id="@+id/action_fragmentThree_to_fragmentFour"
+            app:destination="@id/fragmentFour" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFour"
+        android:name="com.example.fragmentassign.fragments.Fragment_Four"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" >
+        <action
+            android:id="@+id/action_fragmentFour_to_fragmentFive"
+            app:destination="@id/fragmentFive" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFive"
+        android:name="com.example.fragmentassign.fragments.Fragment_Five"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_five" >
+        <action
+            android:id="@+id/action_fragmentFive_to_fragmentSix"
+            app:destination="@id/fragmentSix" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSix"
+        android:name="com.example.fragmentassign.fragments.Fragment_Six"
+        android:label="fragment_six"
+        tools:layout="@layout/fragment_six" >
+        <action
+            android:id="@+id/action_fragmentSix_to_fragmentSeven"
+            app:destination="@id/fragmentSeven" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSeven"
+        android:name="com.example.fragmentassign.fragments.Fragment_Seven"
+        android:label="fragment_seven"
+        tools:layout="@layout/fragment_seven" >
+        <action
+            android:id="@+id/action_fragmentSeven_to_fragmentEight"
+            app:destination="@id/fragmentEight" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEight"
+        android:name="com.example.fragmentassign.fragments.Fragment_Eight"
+        android:label="fragment_eight"
+        tools:layout="@layout/fragment_eight" >
+        <action
+            android:id="@+id/action_fragmentEight_to_fragmentNine"
+            app:destination="@id/fragmentNine" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentNine"
+        android:name="com.example.fragmentassign.fragments.Fragment_Nine"
+        android:label="fragment_nine"
+        tools:layout="@layout/fragment_nine" >
+        <action
+            android:id="@+id/action_fragmentNine_to_fragmentTen"
+            app:destination="@id/fragmentTen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTen"
+        android:name="com.example.fragmentassign.fragments.Fragment_Ten"
+        android:label="fragment_ten"
+        tools:layout="@layout/fragment_ten" >
+        <action
+            android:id="@+id/action_fragmentTen_to_fragmentOne"
+            app:destination="@id/fragmentOne"
+            app:popUpTo="@id/fragmentOne"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
