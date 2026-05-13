@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Scrollables</string>
+    <string name="header_titleEn">ItsPius\'s Favourite Game</string>
+    <string name="header_titleId">Game Favorit ItsPius</string>
+
+    <string name="CO33Name">Clair Obscure: Expedition 33</string>
+    <string name="CO33Desc">
+        A stylish, turn-based RPG with real-time dodging/parrying. You lead a final mission to kill a goddess who annually erases people of a certain age from existence.
+    </string>
+    <string name="CO33DescId">
+        RPG turn-based penuh gaya dengan mekanik tangkisan real-time. Kamu memimpin misi terakhir untuk membunuh dewi yang setiap tahun melenyapkan orang-orang di usia tertentu.
+    </string>
+    <string name="CO33Review">This is genuinely, one of if not the best games I have ever played. Everything is perfect beyond belief, from the music, the sound, the gameplay, the story and the art, it’s absolute perfection. GOTY 2025 fr fr</string>
+    <string name="CO33Rate">Rating: 9/10</string>
+
+    <string name="DOS2Name">Divinity Original Sin 2</string>
+    <string name="DOS2Desc">
+        A deep, isometric RPG famous for tactical "elemental" combat (like freezing rain or exploding oil) and total freedom to solve quests however you want.
+    </string>
+    <string name="DOS2DescId">
+        RPG isometrik yang mendalam, terkenal dengan pertarungan taktis elemen (seperti membekukan hujan atau meledakkan minyak) dan kebebasan mutlak dalam menyelesaikan misi.
+    </string>
+    <string name="DOS2Review">Truly one of the best RPGs of my life. And hot take, it\'s probably better than Baldur\'s Gate 3 (Haven\'t played it but will change if i have)</string>
+    <string name="DOS2Rate">Rating: 10/10</string>
+
+    <string name="W3Name">The Witcher 3: Wild Hunt</string>
+    <string name="W3Desc">
+        A massive, story-driven open-world game where you play a professional monster hunter searching for his daughter in a gritty, folklore-inspired land.
+    </string>
+    <string name="W3DescId">
+        Game open-world kolosal berbasis cerita di mana kamu menjadi pemburu monster profesional yang mencari putrinya di dunia fantasi yang kelam.
+    </string>
+    <string name="W3Review">I think the second best game i\'ve ever played in my life, behind Clair Obscure. Everything is just perfect, the music, the combat, the story, the side quest even. But man is it annoying riding roach.</string>
+    <string name="W3Rate">Rating: 9/10</string>
+
+    <string name="HadesName">Hades</string>
+    <string name="HadesDesc">
+        Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and Pyre.
+    </string>
+    <string name="HadesDescId">
+        Tantang dewa kematian saat kamu menebas dan keluar dari Dunia Bawah dalam game penjelajah bawah tanah bergaya rogue-like ini dari para kreator Bastion, Transistor, dan Pyre.
+    </string>
+    <string name="HadesReview">The only bromance i ever need</string>
+    <string name="HadesRate">Rating: 9/10</string>
+
+    <string name="RPName">R.E.P.O</string>
+    <string name="RPDesc">
+        An online co-op horror game with up to 6 players. Locate valuable, fully physics-based objects and handle them with care as you retrieve and extract to satisfy your creators desires.
+    </string>
+    <string name="RPDescId">
+        Sebuah game horor kooperatif online hingga 6 pemain. Temukan objek berharga yang sepenuhnya berbasis fisika dan tangani dengan hati-hati saat Anda mengambil dan mengekstraknya untuk memenuhi keinginan pencipta Anda.
+    </string>
+    <string name="RPReview">The best game to play with friends and forget that you have class tomorrow, 10/10 would recommend</string>
+    <string name="RPRate">Rating: 8/10</string>
+
+    <string name="desc_textEn">Description</string>
+    <string name="desc_textId">Deskripsi</string>
+
+    <string name="steam_button">Open Steam</string>
+    <string name="steam_buttonId">Buka Steam</string>
+
+    <string name="detail_button">Details</string>
+    <string name="detail_buttonId">Detail</string>
+
+    <string name="back_button">Back</string>
+    <string name="back_buttonId">Kembali</string>
+
+    <string name="settings_button">Settings</string>
+    <string name="settings_buttonId">Pengaturan</string>
+
+    <string name="language_text">Language</string>
+    <string name="language_textId">Bahasa</string>
+
+    <string name="En_textEn">English</string>
+    <string name="Id_textId">Indonesia</string>
+
+</resources>
