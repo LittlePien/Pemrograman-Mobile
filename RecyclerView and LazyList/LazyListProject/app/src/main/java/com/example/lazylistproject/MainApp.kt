@@ -6,7 +6,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.lazylistproject.ui.MainScreen
-import com.example.lazylistproject.ui.theme.LazyListProjectTheme // Change to match your Theme.kt
+import com.example.lazylistproject.ui.theme.LazyListProjectTheme
 
 @Composable
 fun MainApp() {
