@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">LazyListProject</string>
+    <string name="action_btn">Aksi</string>
+
+    <string name="item_title_1">Item Pertama</string>
+    <string name="item_description_1">Deskripsi Item Pertama</string>
+
+    <string name="item_title_2">Item Kedua</string>
+    <string name="item_description_2">Deskripsi Item Kedua</string>
+
+    <string name="item_title_3">Item Ketiga</string>
+    <string name="item_description_3">Deskripsi Item Ketiga</string>
+
+    <string name="item_title_4">Item Keempat</string>
+    <string name="item_description_4">Deskripsi Item Keempat</string>
+
+    <string name="item_title_5">Item Kelima</string>
+    <string name="item_description_5">Deskripsi Item Kelima</string>
+
+    <string name="item_title_6">Item Keenam</string>
+    <string name="item_description_6">Deskripsi Item Keenam</string>
+
+    <string name="item_title_7">Item Ketujuh</string>
+    <string name="item_description_7">Deskripsi Item Ketujuh</string>
+
+    <string name="item_title_8">Item Kedelapan</string>
+    <string name="item_description_8">Deskripsi Item Kedelapan</string>
+</resources>
