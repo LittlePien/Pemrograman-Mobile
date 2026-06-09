@@ -12,30 +12,39 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.os.LocaleListCompat
 import com.example.moviecatalog.R
+import com.example.moviecatalog.data.LanguagePreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
+    languagePreference: LanguagePreference,
     onLanguageChanged: () -> Unit,
     onBackClick: () -> Unit
 ) {
     var isIndonesian by remember {
-        mutableStateOf(AppCompatDelegate.getApplicationLocales().toLanguageTags().contains("id"))
+        mutableStateOf(languagePreference.isIndonesian())
     }
+
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text(stringResource(R.string.settings_button)) },
                 navigationIcon = {
                     IconButton(onClick = onBackClick) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.back_button))
+                        Icon(
+                            Icons.AutoMirrored.Filled.ArrowBack,
+                            contentDescription = stringResource(R.string.back_button)
+                        )
                     }
                 }
             )
         }
     ) { innerPadding ->
         Column(
-            modifier = Modifier.padding(innerPadding).padding(16.dp).fillMaxSize()
+            modifier = Modifier
+                .padding(innerPadding)
+                .padding(16.dp)
+                .fillMaxSize()
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -51,9 +60,14 @@ fun SettingsScreen(
                     checked = isIndonesian,
                     onCheckedChange = { isChecked ->
                         isIndonesian = isChecked
+
+                        languagePreference.setLanguage(isChecked)
+
                         val localeTag = if (isChecked) "id" else "en"
-                        val appLocale = LocaleListCompat.forLanguageTags(localeTag)
-                        AppCompatDelegate.setApplicationLocales(appLocale)
+                        AppCompatDelegate.setApplicationLocales(
+                            LocaleListCompat.forLanguageTags(localeTag)
+                        )
+
                         onLanguageChanged()
                     }
                 )

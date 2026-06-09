@@ -53,6 +53,7 @@ fun AppNavGraph() {
 
         composable(route = NavRoutes.SETTINGS) {
             SettingsScreen(
+                languagePreference = application.languagePreference,
                 onLanguageChanged = { viewModel.fetchMovies() },
                 onBackClick = { navController.popBackStack() }
             )

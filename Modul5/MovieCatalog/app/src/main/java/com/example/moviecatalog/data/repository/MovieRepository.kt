@@ -14,6 +14,28 @@ class MovieRepository(
     private val api: TmdbApiService,
     private val dao: MovieDao
 ) {
+
+//    Strategi Caching: Cache-Then-Network (Stale-While-Revalidate)
+//    Mekanisme kerja:
+//    1. Sistem mengawali proses dengan memancarkan status Loading.
+//    2. Menampilkan data dari penyimpanan lokal (Room) secara instan agar antarmuka
+//       pengguna dapat langsung memuat konten awal.
+//    3. Di saat yang bersamaan pada latar belakang, aplikasi mengambil data terbaru
+//       dari jaringan.
+//    4. Sistem menimpa cache yang lama dengan data baru dari jaringan.
+//    5. Secara otomatis memancarkan data akhir tersebut kepada pengguna.
+//
+//    Keunggulan strategi ini:
+//    - Memberikan pengalaman pengguna yang jauh lebih responsif, mengingat konten
+//      langsung tersaji tanpa hambatan waktu tunggu jaringan.
+//    - Memastikan konten selalu up-to-date karena data diperbarui secara otomatis
+//      setiap kali perangkat terhubung ke internet.
+//    - Beroperasi dengan sangat baik dalam kondisi offline — apabila permintaan
+//      jaringan gagal namun cache sudah tersedia, pengguna akan tetap melihat data
+//      terakhir tanpa terganggu oleh pesan error.
+//    - Menawarkan proses implementasi yang relatif lebih sederhana dan mudah dipahami
+//      jika dibandingkan dengan metode caching yang lebih kompleks.
+
     fun getPopularMovies(language: String): Flow<ApiResult<List<Movie>>> = flow {
         emit(ApiResult.Loading)
 
