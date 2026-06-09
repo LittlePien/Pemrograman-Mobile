@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+
+    <string name="header_title">Film Populer</string>
+    <string name="desc_text">Deskripsi</string>
+    <string name="language_text">Bahasa</string>
+    <string name="En_text">English</string>
+    <string name="Id_text">Indonesia</string>
+    <string name="detail_button">Detail</string>
+    <string name="back_button">Kembali</string>
+    <string name="settings_button">Pengaturan</string>
+    <string name="tmdb_button">Buka TMDB</string>
+    <string name="loading_text">Memuat film...</string>
+    <string name="error_text">Terjadi kesalahan:</string>
+    <string name="retry_button">Coba Lagi</string>
+</resources>

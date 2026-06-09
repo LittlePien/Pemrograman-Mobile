@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+
+    <string name="header_title">Popular Movies</string>
+    <string name="desc_text">Description</string>
+    <string name="language_text">Language</string>
+    <string name="En_text">English</string>
+    <string name="Id_text">Indonesia</string>
+    <string name="detail_button">Details</string>
+    <string name="back_button">Back</string>
+    <string name="settings_button">Settings</string>
+    <string name="tmdb_button">Open TMDB</string>
+    <string name="loading_text">Loading movies...</string>
+    <string name="error_text">An error occurred:</string>
+    <string name="retry_button">Retry</string>
+</resources>
